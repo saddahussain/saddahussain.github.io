@@ -1,0 +1,18 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 29 Jun 2019 16:20:39 at https://sites.google.com/view/saddahussain +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://sites.google.com/view/saddahussain -O1 "C:\My Web Sites\Google Site" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:20:56	Error: 	"Not Found" (404) at link https://sites.google.com/view/saddahussain/"https://twitter.com/iSaddaHussain?ref_src=twsrc%5Etfw%22>Tweets (from https://sites.google.com/view/saddahussain/about)
+16:20:56	Error: 	"Not Found" (404) at link https://sites.google.com/view/saddahussain/"https://platform.twitter.com/widgets.js" (from https://sites.google.com/view/saddahussain/about)
+16:20:56	Error: 	"Not Found" (404) at link https://sites.google.com/view/saddahussain/"//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>" (from https://sites.google.com/view/saddahussain/about)
+16:20:56	Error: 	"Not Found" (404) at link https://sites.google.com/view/saddahussain/"https://platform.linkedin.com/badges/js/profile.js" (from https://sites.google.com/view/saddahussain/about)
+16:20:56	Error: 	"Not Found" (404) at link https://sites.google.com/view/saddahussain/'https://pk.linkedin.com/in/saddahussain?trk=profile-badge'>Sadda (from https://sites.google.com/view/saddahussain/about)
+16:20:56	Error: 	"Not Found" (404) at link https://sites.google.com/view/saddahussain/"https://stackexchange.com/users/7787802"><img (from https://sites.google.com/view/saddahussain/about)
+16:20:56	Error: 	"Not Found" (404) at link https://sites.google.com/view/saddahussain/"https://stackexchange.com/users/flair/7787802.png" (from https://sites.google.com/view/saddahussain/about)
+
+HTTrack Website Copier/3.49-2 mirror complete in 18 seconds : 18 links scanned, 10 files written (799379 bytes overall) [528244 bytes received at 29346 bytes/sec], 732721 bytes transferred using HTTP compression in 14 files, ratio 20%
+(7 errors, 0 warnings, 0 messages)

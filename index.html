@@ -3,15 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sadda Hussain Butt - Senior Android Developer | 8+ Years | Kotlin, Jetpack, AI-Powered Apps, Hardware Kiosks">
+    <meta name="description" content="Sadda Hussain Butt - Senior Android Developer | 8+ Years Experience | Kotlin, Jetpack, AI-Powered Apps">
     <title>Sadda Hussain Butt | Senior Android Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
-        :root { --primary: #0ea5e9; }
-        .heading-font { font-family: 'Space Grotesk', sans-serif; }
-        .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+        
+        :root {
+            --primary: #0ea5e9;
+        }
+        
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .tailwind-ready {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+        }
+        
+        .section-header {
+            position: relative;
+        }
+        
         .section-header::after {
             content: '';
             position: absolute;
@@ -21,60 +45,147 @@
             bottom: -6px;
             left: 0;
         }
+        
+        .timeline-dot {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans">
+<body class="tailwind-ready bg-slate-50 text-slate-800">
 
     <!-- NAVBAR -->
     <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
-        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
-            <div class="flex items-center gap-x-3">
-                <div class="w-9 h-9 bg-sky-500 text-white rounded-2xl flex items-center justify-center text-2xl font-bold">S</div>
-                <h1 class="heading-font text-2xl font-semibold">Sadda Hussain Butt</h1>
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="px-8 py-5 flex items-center justify-between">
+                <!-- Logo / Name -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-sky-500 text-white rounded-2xl flex items-center justify-center text-xl font-bold">S</div>
+                    <h1 class="heading-font text-2xl font-semibold tracking-tight">Sadda Hussain Butt</h1>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#about" class="hover:text-sky-600">About</a>
+                    <a href="#experience" class="hover:text-sky-600">Experience</a>
+                    <a href="#projects" class="hover:text-sky-600">Projects</a>
+                    <a href="#skills" class="hover:text-sky-600">Skills</a>
+                    <a href="#education" class="hover:text-sky-600">Education</a>
+                    <a href="#contact" class="hover:text-sky-600">Contact</a>
+                </div>
+
+                <div class="flex items-center gap-x-4">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/saddahussain" target="_blank"
+                       class="flex items-center gap-x-1 text-slate-700 hover:text-sky-600">
+                        <i class="fab fa-linkedin text-xl"></i>
+                        <span class="hidden sm:inline text-sm font-medium">LinkedIn</span>
+                    </a>
+                    
+                    <!-- Download CV -->
+                    <a href="Sadda_Hussain_Android_8_Years.pdf" download
+                       class="flex items-center gap-x-2 bg-sky-600 hover:bg-sky-700 text-white px-5 py-2.5 rounded-3xl text-sm font-semibold">
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button onclick="toggleMobileMenu()" class="md:hidden text-2xl text-slate-700">
+                        <i id="menu-icon" class="fas fa-bars"></i>
+                    </button>
+                </div>
             </div>
-            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
-                <a href="#about" class="hover:text-sky-600">About</a>
-                <a href="#experience" class="hover:text-sky-600">Experience</a>
-                <a href="#projects" class="hover:text-sky-600">Projects</a>
-                <a href="#skills" class="hover:text-sky-600">Skills</a>
-                <a href="#education" class="hover:text-sky-600">Education</a>
-                <a href="#volunteering" class="hover:text-sky-600">Volunteering</a>
-            </div>
-            <div class="flex items-center gap-x-4">
-                <a href="https://www.linkedin.com/in/saddahussain/" target="_blank" class="flex items-center gap-x-2 text-slate-700 hover:text-sky-600">
-                    <i class="fab fa-linkedin text-2xl"></i>
-                    <span class="hidden sm:inline">LinkedIn</span>
-                </a>
-                <a href="Sadda_Hussain_Android_8_Years.pdf" download class="flex items-center gap-x-2 bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-3xl text-sm font-semibold">
-                    <i class="fas fa-download"></i> Download CV
-                </a>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden px-8 pb-6 border-t">
+                <div class="flex flex-col gap-y-4 pt-4 text-sm font-medium">
+                    <a href="#about" onclick="toggleMobileMenu()" class="hover:text-sky-600">About</a>
+                    <a href="#experience" onclick="toggleMobileMenu()" class="hover:text-sky-600">Experience</a>
+                    <a href="#projects" onclick="toggleMobileMenu()" class="hover:text-sky-600">Projects</a>
+                    <a href="#skills" onclick="toggleMobileMenu()" class="hover:text-sky-600">Skills</a>
+                    <a href="#education" onclick="toggleMobileMenu()" class="hover:text-sky-600">Education</a>
+                    <a href="#contact" onclick="toggleMobileMenu()" class="hover:text-sky-600">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- HERO -->
-    <header class="hero-bg text-white py-24">
+    <header class="hero-bg text-white py-20 md:py-28">
         <div class="max-w-screen-2xl mx-auto px-8 grid md:grid-cols-12 gap-12 items-center">
             <div class="md:col-span-7">
+                <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-3xl text-sm mb-6">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    Available for freelance &amp; full-time opportunities
+                </div>
+                
                 <h1 class="text-5xl md:text-6xl font-semibold heading-font tracking-tighter leading-none mb-4">
-                    Sadda Hussain Butt
+                    Hi, I'm Sadda Hussain Butt
                 </h1>
-                <p class="text-3xl text-sky-300 mb-6">Senior Android Developer • 8+ Years</p>
-                <p class="text-lg max-w-lg text-slate-200 mb-8">
-                    Top Rated Upwork freelancer (100% Job Success). Specialized in Kotlin, Jetpack, AI integration (OpenAI GPT-4o Mini & Groq LLaMA), secure hardware kiosks, and scalable B2B/B2C apps.
+                <p class="text-2xl md:text-3xl text-sky-300 mb-6">
+                    Senior Android Developer • 8+ Years Experience
                 </p>
+                
+                <p class="text-lg max-w-lg text-slate-200 mb-8">
+                    Building secure, scalable, and delightful Android applications across B2B, B2C, and C2C domains.
+                    From AI-powered wellness apps to self-service kiosks with hardware integration — I turn complex ideas into production-ready mobile experiences.
+                </p>
+
                 <div class="flex flex-wrap gap-4">
-                    <a href="#projects" class="bg-white text-slate-900 hover:bg-sky-100 px-8 py-4 rounded-3xl font-semibold flex items-center gap-x-3 text-lg">
-                        View My Work <i class="fas fa-arrow-right"></i>
+                    <a href="#projects" 
+                       class="inline-flex items-center gap-x-3 bg-white text-slate-900 hover:bg-sky-100 px-8 py-4 rounded-3xl font-semibold text-lg">
+                        <span>See my work</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/saddahussain/" target="_blank" class="border border-white/60 hover:border-white px-8 py-4 rounded-3xl flex items-center gap-x-3">
-                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    
+                    <a href="https://www.linkedin.com/in/saddahussain" target="_blank"
+                       class="inline-flex items-center gap-x-3 border border-white/50 hover:border-white text-white px-8 py-4 rounded-3xl font-medium">
+                        <i class="fab fa-linkedin"></i>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                    
+                    <a href="mailto:saddabutt@gmail.com" 
+                       class="inline-flex items-center gap-x-3 border border-white/50 hover:border-white text-white px-8 py-4 rounded-3xl font-medium">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email me</span>
                     </a>
                 </div>
+
+                <div class="mt-12 flex items-center gap-x-8 text-sm">
+                    <div class="flex items-center gap-x-2">
+                        <i class="fas fa-map-marker-alt text-emerald-400"></i>
+                        <span>Sialkot, Pakistan (Remote)</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <i class="fas fa-phone text-emerald-400"></i>
+                        <span>+92 322 7036979</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <i class="fas fa-envelope text-emerald-400"></i>
+                        <span>saddabutt@gmail.com</span>
+                    </div>
+                </div>
             </div>
+
+            <!-- Hero visual -->
             <div class="md:col-span-5 flex justify-center">
-                <div class="w-80 h-80 bg-gradient-to-br from-sky-400 to-indigo-500 rounded-[4rem] rotate-6 flex items-center justify-center shadow-2xl">
-                    <div class="bg-white w-72 h-72 rounded-3xl -rotate-6 flex items-center justify-center text-8xl">📱</div>
+                <div class="relative">
+                    <div class="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-sky-400 to-indigo-500 rounded-[4rem] rotate-6 flex items-center justify-center shadow-2xl">
+                        <div class="bg-white rounded-3xl w-72 h-72 md:w-80 md:h-80 flex items-center justify-center -rotate-6 overflow-hidden">
+                            <div class="text-center">
+                                <div class="w-32 h-32 mx-auto bg-slate-100 rounded-2xl flex items-center justify-center mb-6 text-7xl">
+                                    📱
+                                </div>
+                                <h3 class="font-semibold text-3xl text-slate-900 heading-font">Android Expert</h3>
+                                <p class="text-sky-600 mt-1">Kotlin • Jetpack • AI</p>
+                                <p class="text-xs text-slate-500 mt-8">Currently building the future<br>of mobile experiences</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,11 +195,18 @@
     <section id="about" class="py-20 bg-white">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="section-header text-4xl font-semibold heading-font mb-8">About Me</h2>
-            <p class="text-lg leading-relaxed text-slate-600 max-w-3xl">
-                Android developer with <strong>8 years</strong> of experience building mobile applications from concept to release. 
-                Experienced across B2B, B2C, and C2C domains including booking, healthcare, VPN, virtual fitness, service marketplaces, 
-                and self-service kiosks with advanced hardware integration. Currently a Top Rated Freelance Android Engineer on Upwork.
-            </p>
+            <div class="max-w-3xl">
+                <p class="text-lg leading-relaxed text-slate-600">
+                    Android developer with <strong>8 years</strong> of hands-on experience building mobile applications from concept to Play Store release. 
+                    I specialize in creating secure, scalable, and user-friendly solutions across B2B, B2C, and C2C domains — including booking platforms, healthcare, VPN, virtual fitness, service marketplaces, and advanced hardware-integrated self-service kiosks.
+                </p>
+                <p class="text-lg leading-relaxed text-slate-600 mt-6">
+                    Currently working as a <strong>Top Rated Freelance Android Engineer on Upwork (100% Job Success)</strong>, I recently delivered a robust kiosk system for electronics buyback with secure serial communication, barcode scanning, and real-time REST API integration.
+                </p>
+                <p class="text-lg leading-relaxed text-slate-600 mt-6">
+                    Passionate about clean architecture, modern Kotlin, and integrating cutting-edge AI (OpenAI GPT-4o Mini &amp; Groq LLaMA) to deliver delightful user experiences.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -101,15 +219,31 @@
                 <!-- Freelance -->
                 <div class="grid md:grid-cols-12 gap-8">
                     <div class="md:col-span-3">
-                        <span class="text-emerald-600 font-medium">April 2025 – Present</span>
-                        <h3 class="text-2xl font-semibold heading-font">Freelance Android Engineer</h3>
-                        <p class="text-slate-500">Upwork • Remote</p>
-                        <div class="mt-3 inline-flex bg-emerald-100 text-emerald-700 text-xs font-bold px-4 py-1 rounded-3xl">Top Rated • 100% Job Success</div>
+                        <div class="sticky top-8">
+                            <span class="text-emerald-600 font-medium">April 2025 — Present</span>
+                            <h3 class="text-2xl font-semibold heading-font mt-1">Freelance Android Engineer</h3>
+                            <p class="text-slate-500">Upwork • Remote</p>
+                            <div class="mt-4 inline-flex px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-semibold rounded-2xl">Top Rated • 100% Job Success</div>
+                        </div>
                     </div>
                     <div class="md:col-span-9">
-                        <ul class="list-disc pl-6 space-y-2 text-slate-600">
-                            <li>Developed robust Kiosk-Based Android System for Electronics Buyback (Self-Service) with secure serial communication (ENQ/ACK, CRC checks), barcode scanning, receipt lookup, and RESTful API integration.</li>
-                            <li>Built mobile diagnostic app to assess device health for resale and trade-in processes.</li>
+                        <ul class="space-y-6 text-slate-600">
+                            <li class="flex gap-x-4">
+                                <i class="fas fa-check-circle text-sky-500 mt-1"></i>
+                                Developed a robust <strong>Kiosk-Based Android System for Electronics Buyback</strong> (Self-Service)
+                            </li>
+                            <li class="flex gap-x-4">
+                                <i class="fas fa-check-circle text-sky-500 mt-1"></i>
+                                Engineered secure serial communication with ENQ/ACK, CRC checks, cassette status parsing, and real-time response tracking
+                            </li>
+                            <li class="flex gap-x-4">
+                                <i class="fas fa-check-circle text-sky-500 mt-1"></i>
+                                Implemented barcode scanning, receipt lookup, and transaction validation via RESTful APIs
+                            </li>
+                            <li class="flex gap-x-4">
+                                <i class="fas fa-check-circle text-sky-500 mt-1"></i>
+                                Built a mobile diagnostic app to assess device health for resale and trade-in processes
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -117,36 +251,69 @@
                 <!-- Senior Lead -->
                 <div class="grid md:grid-cols-12 gap-8">
                     <div class="md:col-span-3">
-                        <span class="text-emerald-600 font-medium">May 2019 – Mar 2025</span>
-                        <h3 class="text-2xl font-semibold heading-font">Senior Lead Android Developer</h3>
-                        <p class="text-slate-500">Xenex Media • Remote, Australia</p>
+                        <div class="sticky top-8">
+                            <span class="text-emerald-600 font-medium">May 2019 — March 2025</span>
+                            <h3 class="text-2xl font-semibold heading-font mt-1">Senior Lead Android Developer</h3>
+                            <p class="text-slate-500">Xenex Media • Remote, Australia</p>
+                            <p class="text-xs mt-2">Led team of 10+ developers • 10+ Android apps shipped</p>
+                        </div>
                     </div>
-                    <div class="md:col-span-9 bg-white p-8 rounded-3xl">
-                        <p class="font-semibold text-xl mb-4">Flagship Project: myWellB – AI-Powered Personalized Wellness App</p>
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-slate-600">
-                            <li class="flex gap-3"><i class="fas fa-check text-sky-500 mt-0.5"></i> Kotlin, MVVM, Jetpack, Firebase</li>
-                            <li class="flex gap-3"><i class="fas fa-check text-sky-500 mt-0.5"></i> OpenAI GPT-4o Mini + Groq LLaMA 3.1 (8B & 70B)</li>
-                            <li class="flex gap-3"><i class="fas fa-check text-sky-500 mt-0.5"></i> AES encryption, Biometric Auth & 2FA</li>
-                            <li class="flex gap-3"><i class="fas fa-check text-sky-500 mt-0.5"></i> Stripe payments (multi-currency) + white-label UI</li>
-                            <li class="flex gap-3"><i class="fas fa-check text-sky-500 mt-0.5"></i> Localized in English, Chinese, Thai, Korean</li>
+                    <div class="md:col-span-9 bg-white p-8 rounded-3xl shadow-sm">
+                        <div class="mb-8">
+                            <span class="uppercase text-xs tracking-widest font-medium text-sky-600">Flagship Project</span>
+                            <h4 class="text-2xl font-semibold">myWellB — AI-Powered Personalized Wellness App</h4>
+                        </div>
+                        <ul class="grid md:grid-cols-2 gap-y-4 text-slate-600">
+                            <li class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-sky-500 mt-1"></i>
+                                Built with Kotlin, MVVM, Jetpack, Firebase
+                            </li>
+                            <li class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-sky-500 mt-1"></i>
+                                Integrated OpenAI GPT-4o Mini &amp; Groq LLaMA 3.1
+                            </li>
+                            <li class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-sky-500 mt-1"></i>
+                                AES encryption, Biometric Auth &amp; 2FA
+                            </li>
+                            <li class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-sky-500 mt-1"></i>
+                                Stripe payments (AUD, Baht, +) with automated receipts
+                            </li>
+                            <li class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-sky-500 mt-1"></i>
+                                Dynamic white-label UI theming + localization (EN, ZH, TH, KO)
+                            </li>
+                            <li class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-sky-500 mt-1"></i>
+                                <a href="#" class="text-sky-600 hover:underline">Watch Demo →</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Previous roles -->
-                <div class="grid md:grid-cols-12 gap-8 text-slate-600">
+                <!-- Upgenics -->
+                <div class="grid md:grid-cols-12 gap-8">
                     <div class="md:col-span-3">
-                        <span class="text-emerald-600 font-medium">Oct 2018 – Apr 2019</span><br>
-                        <strong>Android Developer</strong><br>Upgenics International, Lahore
+                        <span class="text-emerald-600 font-medium">Oct 2018 — Apr 2019</span>
+                        <h3 class="text-xl font-semibold">Android Developer</h3>
+                        <p class="text-slate-500">Upgenics International • Lahore, Pakistan</p>
                     </div>
-                    <div class="md:col-span-9">Contributed to PhoneCheck – patent-pending mobile diagnostic app with 60+ automated hardware/software checks.</div>
+                    <div class="md:col-span-9 text-slate-600">
+                        Contributed to <strong>PhoneCheck</strong>, a patent-pending mobile diagnostic app performing 60+ automated hardware/software checks.
+                    </div>
                 </div>
-                <div class="grid md:grid-cols-12 gap-8 text-slate-600">
+
+                <!-- AppsGenii -->
+                <div class="grid md:grid-cols-12 gap-8">
                     <div class="md:col-span-3">
-                        <span class="text-emerald-600 font-medium">Oct 2017 – Oct 2018</span><br>
-                        <strong>Android Developer</strong><br>AppsGenii Technologies, Lahore
+                        <span class="text-emerald-600 font-medium">Oct 2017 — Oct 2018</span>
+                        <h3 class="text-xl font-semibold">Android Developer</h3>
+                        <p class="text-slate-500">AppsGenii Technologies • Lahore, Pakistan</p>
                     </div>
-                    <div class="md:col-span-9">Developed features for LaVoice (polling) and ShareNGo (P2P finance) focusing on engagement and security.</div>
+                    <div class="md:col-span-9 text-slate-600">
+                        Developed features for <strong>LaVoice</strong> (polling app) and <strong>ShareNGo</strong> (peer-to-peer finance sharing) with focus on user engagement and security.
+                    </div>
                 </div>
             </div>
         </div>
@@ -156,13 +323,44 @@
     <section id="projects" class="py-20 bg-white">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="section-header text-4xl font-semibold heading-font mb-12">Featured Projects</h2>
+            
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="border rounded-3xl p-8 hover:shadow-xl">Plannerly – Legacy Planning App <span class="text-xs block text-slate-400 mt-1">(Active testing)</span></div>
-                <div class="border rounded-3xl p-8 hover:shadow-xl">BoroMe – Lending & Borrowing Platform (1,500+ users)</div>
-                <div class="border rounded-3xl p-8 hover:shadow-xl">RealGiving – Location-based Deal Finder (1,000+ users)</div>
-                <div class="border rounded-3xl p-8 hover:shadow-xl">SwapCo – Service Swapping Platform ($60k+ sales)</div>
-                <div class="border rounded-3xl p-8 hover:shadow-xl">FreshFeelz – Health & Beauty Booking ($78k+ bookings)</div>
-                <div class="border rounded-3xl p-8 hover:shadow-xl">GoCycle – Virtual Cycling App (6,000+ rides)</div>
+                <!-- Project cards -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1">
+                    <h4 class="font-semibold text-xl">Plannerly – Legacy Planning App</h4>
+                    <p class="text-sm text-slate-500 mt-1">In active testing phase</p>
+                    <a href="#" class="mt-6 inline-flex items-center gap-x-2 text-sky-600 font-medium">Watch Demo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1">
+                    <h4 class="font-semibold text-xl">BoroMe – Lending &amp; Borrowing Platform</h4>
+                    <p class="text-sm text-slate-500 mt-1">1,500+ users • 50+ businesses • 40+ listings</p>
+                    <a href="#" class="mt-6 inline-flex items-center gap-x-2 text-sky-600 font-medium">Watch Demo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1">
+                    <h4 class="font-semibold text-xl">RealGiving – Location-based Deal Finder</h4>
+                    <p class="text-sm text-slate-500 mt-1">1,000+ users • 50+ partners • 10+ merchants</p>
+                    <a href="#" class="mt-6 inline-flex items-center gap-x-2 text-sky-600 font-medium">Watch Demo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1">
+                    <h4 class="font-semibold text-xl">SwapCo – Service Swapping Platform</h4>
+                    <p class="text-sm text-slate-500 mt-1">800+ customers • $60,000+ in sales</p>
+                    <a href="#" class="mt-6 inline-flex items-center gap-x-2 text-sky-600 font-medium">Watch Demo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1">
+                    <h4 class="font-semibold text-xl">FreshFeelz – Health &amp; Beauty Booking</h4>
+                    <p class="text-sm text-slate-500 mt-1">2,000+ users • $78,000+ in bookings</p>
+                    <a href="#" class="mt-6 inline-flex items-center gap-x-2 text-sky-600 font-medium">Watch Demo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1">
+                    <h4 class="font-semibold text-xl">GoCycle – Virtual Cycling App</h4>
+                    <p class="text-sm text-slate-500 mt-1">2,000+ users • 6,000+ rides logged</p>
+                    <a href="#" class="mt-6 inline-flex items-center gap-x-2 text-sky-600 font-medium">Watch Demo <i class="fas fa-external-link-alt"></i></a>
+                </div>
             </div>
         </div>
     </section>
@@ -170,14 +368,67 @@
     <!-- SKILLS -->
     <section id="skills" class="py-20 bg-slate-100">
         <div class="max-w-screen-2xl mx-auto px-8">
-            <h2 class="section-header text-4xl font-semibold heading-font mb-12">Skills & Tools</h2>
-            <div class="grid md:grid-cols-3 gap-x-12 gap-y-8 text-sm">
-                <div><strong>Languages & Tools:</strong> Kotlin, Java, Android Studio, Gradle</div>
-                <div><strong>Architecture:</strong> MVVM, Clean Architecture, SOLID, Modularization</div>
-                <div><strong>Frameworks:</strong> Jetpack, Hilt/Dagger, Retrofit, Coroutines, Flow</div>
-                <div><strong>UI/Design:</strong> Material Design, Figma, Adobe XD</div>
-                <div><strong>Cloud & Integrations:</strong> Firebase, Stripe, PayPal, Google Maps, REST, GraphQL, WebSockets</div>
-                <div><strong>Others:</strong> Git, Jira, Scrum, Kanban</div>
+            <h2 class="section-header text-4xl font-semibold heading-font mb-12">Skills &amp; Tools</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-500 mb-4">Languages &amp; IDE</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Kotlin</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Java</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Android Studio</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Gradle (Kotlin DSL)</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-500 mb-4">Architecture &amp; Patterns</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">MVVM</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Clean Architecture</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">SOLID Principles</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Modularization</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-500 mb-4">Frameworks &amp; Libraries</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Jetpack Compose</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Hilt / Dagger</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Retrofit</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Coroutines &amp; Flow</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Firebase</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-500 mb-4">UI/UX &amp; Design</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Material Design 3</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Figma</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Adobe XD</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Custom Views</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-500 mb-4">Cloud &amp; Integrations</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Stripe • PayPal</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Google Maps • Mapbox</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">REST • GraphQL • WebSockets</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">AES Encryption • Biometrics</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-500 mb-4">Project Management</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Git • GitHub • Bitbucket</span>
+                        <span class="px-4 py-2 bg-white rounded-3xl text-sm font-medium">Jira • Scrum • Kanban</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -186,62 +437,116 @@
     <section id="education" class="py-20 bg-white">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="section-header text-4xl font-semibold heading-font mb-8">Education</h2>
-            <p class="text-xl"><strong>Bachelor of Science, Software Engineering</strong><br>
-            University of Gujrat • 2013 – 2017 • Grade: A+<br>
-            Major: Mobile App Development, Computer System Security</p>
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-semibold">Bachelor of Science, Software Engineering</h3>
+                    <p class="text-slate-500">University of Gujrat • 2013 — 2017</p>
+                    <p class="mt-2 text-emerald-600 font-medium">Grade: A+</p>
+                </div>
+                <div class="flex-1 text-slate-600">
+                    <strong>Major:</strong> Mobile App Development, Computer System Security<br>
+                    <strong>Activities:</strong> IEEE Student Ambassador, Pakistan
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- VOLUNTEERING (NEW SECTION FROM YOUR LINKEDIN) -->
-    <section id="volunteering" class="py-20 bg-slate-100">
+    <!-- CONTACT / FOOTER -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
         <div class="max-w-screen-2xl mx-auto px-8">
-            <h2 class="section-header text-4xl font-semibold heading-font mb-12">Volunteering</h2>
-            
-            <div class="grid md:grid-cols-12 gap-8 bg-white p-8 rounded-3xl shadow-sm">
-                <div class="md:col-span-4">
-                    <div class="flex items-center gap-3 mb-2">
-                        <div class="w-10 h-10 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl font-bold">I</div>
-                        <div>
-                            <h3 class="text-2xl font-semibold heading-font">IEEE Student Ambassador</h3>
-                            <p class="text-slate-500">IEEE • Science and Technology</p>
-                        </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-semibold heading-font">Let's build something amazing together</h2>
+                    <p class="mt-4 text-slate-400">Whether you need a new Android app, a kiosk system, AI integration, or just want to chat about mobile tech — I'm all ears.</p>
+                    
+                    <div class="mt-10">
+                        <a href="mailto:saddabutt@gmail.com" class="block text-xl font-medium hover:text-sky-400">saddabutt@gmail.com</a>
+                        <a href="tel:+923227036979" class="block text-xl font-medium hover:text-sky-400 mt-3">+92 322 7036979</a>
                     </div>
-                    <span class="inline-flex px-4 py-1 text-xs font-medium bg-emerald-100 text-emerald-700 rounded-3xl">Jan 2016 – Dec 2016 • 1 year</span>
+                    
+                    <div class="mt-12 flex gap-x-6">
+                        <a href="https://www.linkedin.com/in/saddahussain" target="_blank" class="text-3xl hover:text-sky-400"><i class="fab fa-linkedin"></i></a>
+                        <!-- Add your GitHub here once you push the repo -->
+                        <a href="#" class="text-3xl hover:text-sky-400"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
                 
-                <div class="md:col-span-8 text-slate-600">
-                    <p class="mb-6">
-                        The IEEEXtreme Student Ambassador program gave me the opportunity to work with an international team of highly motivated volunteers in sharing the enjoyment of coding at Xtreme.
+                <div class="bg-slate-800 rounded-3xl p-8">
+                    <p class="text-sm uppercase tracking-widest mb-2">This portfolio was made with</p>
+                    <div class="flex items-center gap-x-3 text-4xl">
+                        ❤️ &nbsp; Kotlin &nbsp; Tailwind &nbsp; Grok
+                    </div>
+                    <p class="mt-8 text-slate-400 text-sm">
+                        Built instantly from your CV using Grok by xAI.<br>
+                        Just push this file to your GitHub repo and enable GitHub Pages!
                     </p>
-                    <p class="font-medium mb-4">Key Responsibilities:</p>
-                    <ul class="space-y-3 text-sm">
-                        <li class="flex gap-3"><span class="font-mono text-sky-500">01</span> Reached out to universities, student branches, and student members about IEEEXtreme.</li>
-                        <li class="flex gap-3"><span class="font-mono text-sky-500">02</span> Assisted student members in hosting IEEEXtreme in their student branches and helped non-student branch members find venues.</li>
-                        <li class="flex gap-3"><span class="font-mono text-sky-500">03</span> Hosted seminars and drove awareness about the IEEEXtreme programming competition in universities and colleges.</li>
-                        <li class="flex gap-3"><span class="font-mono text-sky-500">04</span> Identified and assisted students who needed support and guidance on any IEEEXtreme-related details.</li>
-                        <li class="flex gap-3"><span class="font-mono text-sky-500">05</span> Coordinated all teams under one roof and provided proper support during the event.</li>
-                        <li class="flex gap-3"><span class="font-mono text-sky-500">06</span> Connected student members in search of a proctor with professional members.</li>
-                    </ul>
                 </div>
+            </div>
+            
+            <div class="text-center text-slate-500 text-sm mt-16">
+                © 2026 Sadda Hussain Butt • Android Developer Portfolio
             </div>
         </div>
     </section>
 
-    <!-- FOOTER / CONTACT -->
-    <footer class="bg-slate-900 text-white py-16">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <p class="text-2xl font-medium">Ready to build the next big Android experience?</p>
-            <a href="mailto:saddabutt@gmail.com" class="block mt-6 text-sky-400 hover:text-white text-xl">saddabutt@gmail.com</a>
-            <a href="tel:+923227036979" class="block text-sky-400 hover:text-white text-xl">+92 322 7036979</a>
-            <div class="mt-8 flex justify-center gap-8 text-3xl">
-                <a href="https://www.linkedin.com/in/saddahussain/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <p class="text-slate-500 text-sm mt-12">© 2026 Sadda Hussain Butt • Built from your CV & LinkedIn</p>
-        </div>
-    </footer>
-
     <script>
-        console.log('%c✅ Portfolio updated with your IEEE Student Ambassador Volunteering experience!', 'color:#0ea5e9;font-weight:bold');
+        // Tailwind script initialization
+        function initializeTailwind() {
+            return {
+                config(userConfig = {}) {
+                    return {
+                        configUser: userConfig,
+                        theme: {
+                            extend: {
+                                colors: {
+                                    primary: '#0ea5e9'
+                                }
+                            }
+                        }
+                    }
+                },
+                theme: {
+                    extend: {}
+                }
+            }
+        }
+        
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu')
+            const icon = document.getElementById('menu-icon')
+            menu.classList.toggle('hidden')
+            
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars')
+                icon.classList.add('fa-xmark')
+            } else {
+                icon.classList.remove('fa-xmark')
+                icon.classList.add('fa-bars')
+            }
+        }
+        
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeTailwind()
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    if (this.getAttribute('href') !== '#') {
+                        e.preventDefault()
+                        const target = document.querySelector(this.getAttribute('href'))
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            })
+                        }
+                    }
+                })
+            })
+            
+            console.log('%c✅ Portfolio website ready! Push to GitHub and enable Pages.', 'color:#0ea5e9; font-size:13px; font-weight:bold')
+        })
     </script>
 </body>
 </html>

@@ -74,46 +74,327 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
 
     <!-- PROJECTS -->
-    <section id="projects" class="py-20 bg-[#1a1c24]">
-        <div class="max-w-screen-2xl mx-auto px-8">
-            <h2 class="section-header text-4xl font-semibold heading-font mb-12">Featured Projects</h2>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="project-card rounded-3xl p-8">
-                    <h4 class="font-semibold text-xl text-white">myWellB — AI-Powered Wellness App</h4>
-                    <p class="text-[#f16522] text-sm mt-1">Flagship Project • Xenex Media</p>
-                    <p class="mt-6 text-slate-400">AI coaching, biometric security, Stripe payments, multi-language support.</p>
-                </div>
-                
-                <div class="project-card rounded-3xl p-8">
-                    <h4 class="font-semibold text-xl text-white">Electronics Buyback Kiosk System</h4>
-                    <p class="text-[#f16522] text-sm mt-1">Hardware Integration</p>
-                    <p class="mt-6 text-slate-400">Self-service kiosk with secure serial communication, barcode scanning & real-time API integration.</p>
-                </div>
-                
-                <div class="project-card rounded-3xl p-8">
-                    <h4 class="font-semibold text-xl text-white">BoroMe – Lending & Borrowing Platform</h4>
-                    <p class="text-[#f16522] text-sm mt-1">1,500+ users • Peer-to-peer finance</p>
-                </div>
-                
-                <div class="project-card rounded-3xl p-8">
-                    <h4 class="font-semibold text-xl text-white">RealGiving – Location-based Deal Finder</h4>
-                    <p class="text-[#f16522] text-sm mt-1">1,000+ users • 50+ partners</p>
-                </div>
-                
-                <div class="project-card rounded-3xl p-8">
-                    <h4 class="font-semibold text-xl text-white">FreshFeelz – Health & Beauty Booking</h4>
-                    <p class="text-[#f16522] text-sm mt-1">2,000+ users • $78k+ in bookings</p>
-                </div>
-                
-                <div class="project-card rounded-3xl p-8">
-                    <h4 class="font-semibold text-xl text-white">GoCycle – Virtual Cycling App</h4>
-                    <p class="text-[#f16522] text-sm mt-1">2,000+ users • 6,000+ rides logged</p>
+    <section id="projects">
+        <!-- Project 1: myWellB -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gradient-to-br from-[#23252c] to-[#1a1c24] rounded-2xl p-8 w-full h-80 flex items-center justify-center">
+                            <i class="fas fa-heart text-7xl text-[#f16522] opacity-30"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">myWellB</h3>
+                        <p class="text-slate-400 text-xl mb-4">Flagship wellness platform with LLM coaching & biometric security</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Kotlin</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">AI/LLM</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Stripe Payments</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Multi-language</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            Developed for Xenex Media, myWellB is an AI-powered wellness platform featuring personalized coaching powered by OpenAI GPT-4o and Groq LLaMA 3.1. Integrated Stripe payments for premium subscriptions, biometric authentication (fingerprint/face), AES encryption for sensitive data, and white-label support for multiple markets. Successfully published on Play Store with 5-star reviews.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Project 2: BuyBackX Kiosk -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">BuyBackX</h3>
+                        <p class="text-slate-400 text-xl mb-4">Self-service kiosk system for instant device quotes and cash payouts</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Hardware Integration</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Serial Communication</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Barcode Scanning</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Real-time API</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            Freelance project for an in-store device buyback system. Engineered secure serial communication with hardware readers, implemented barcode scanning for inventory tracking, and integrated real-time API for instant device valuation. The system enables customers to get instant quotes and receive cash buybacks without manual intervention.
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gradient-to-br from-[#23252c] to-[#1a1c24] rounded-2xl p-8 w-full h-80 flex items-center justify-center">
+                            <i class="fas fa-mobile-screen text-7xl text-[#f16522] opacity-30"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 3: Cellular Optics -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gradient-to-br from-[#23252c] to-[#1a1c24] rounded-2xl p-8 w-full h-80 flex items-center justify-center">
+                            <i class="fas fa-microscope text-7xl text-[#f16522] opacity-30"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">Cellular Optics</h3>
+                        <p class="text-slate-400 text-xl mb-4">Cloud-based device diagnostics and health analysis platform</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Automated Testing</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">IMEI Verification</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Data Erasure</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Battery Analysis</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            Built a comprehensive diagnostics platform for device health analysis covering automated hardware testing, IMEI verification, secure data erasure protocols, and battery health analytics. Integrated with cloud backend for real-time reporting and integrated device health scoring to help businesses assess device quality at scale.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 4: BoroMe -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">BoroMe</h3>
+                        <p class="text-slate-400 text-xl mb-4">Community lending and borrowing app connecting users for financial inclusion</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Finance</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">P2P Marketplace</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">1,500+ Users</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Xenex Media</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            Developed at Xenex Media, BoroMe is a peer-to-peer lending platform connecting users for community-based financial services. Implemented secure transaction handling, user verification, reputation systems, and payment integration. The platform reached 1,500+ active users demonstrating strong adoption in the lending marketplace.
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gradient-to-br from-[#23252c] to-[#1a1c24] rounded-2xl p-8 w-full h-80 flex items-center justify-center">
+                            <i class="fas fa-handshake text-7xl text-[#f16522] opacity-30"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 5: FreshFeelz -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gradient-to-br from-[#23252c] to-[#1a1c24] rounded-2xl p-8 w-full h-80 flex items-center justify-center">
+                            <i class="fas fa-spa text-7xl text-[#f16522] opacity-30"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">FreshFeelz</h3>
+                        <p class="text-slate-400 text-xl mb-4">On-demand booking platform for wellness and beauty services</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Marketplace</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Booking System</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">2,000+ Users</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">$78K+ Bookings</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            A marketplace connecting users with health and beauty service providers. Implemented real-time booking, appointment scheduling, service provider ratings, and secure payment processing. The platform generated over $78,000 in service bookings with 2,000+ active users, demonstrating strong market demand for convenient wellness services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 6: GoCycle -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">GoCycle</h3>
+                        <p class="text-slate-400 text-xl mb-4">Interactive virtual cycling app with real-time workout tracking</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Fitness</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Real-time Tracking</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">2,000+ Users</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">6,000+ Rides</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            Developed for Xenex Media, GoCycle is a virtual cycling platform enabling users to join interactive rides with real-time performance tracking. Integrated GPS tracking, workout metrics, leaderboards, and social features. The app recorded 6,000+ completed rides with 2,000+ active users, highlighting strong engagement in the fitness community.
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gradient-to-br from-[#23252c] to-[#1a1c24] rounded-2xl p-8 w-full h-80 flex items-center justify-center">
+                            <i class="fas fa-biking text-7xl text-[#f16522] opacity-30"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 7: Pro Call Recorder -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="assets/pro_call_rec.png" alt="Pro Call Recorder" class="rounded-2xl w-full h-[800px] object-contain">
+                    </div>
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">Pro Call Recorder</h3>
+                        <p class="text-slate-400 text-xl mb-4">Call recording app for real estate communication tracking</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Tools</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Android</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">UK</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            Developed for a real estate company in the United Kingdom to improve communication between the company and clients. Built a call recording app for Android that automatically records client conversations with proper feedback mechanisms for future reference and quality assurance purposes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 8: Survey Essentials -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">Survey Essentials</h3>
+                        <p class="text-slate-400 text-xl mb-4">Church and house of worship security assessment platform</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Security Assessment</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Android</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">USA</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            Developed for Survey Essentials LLC to improve Church and House of Worship security. Built a comprehensive vulnerability assessment app that simplifies complex security evaluation processes. The app enables cost-effective, easy-to-use risk analysis and threat assessment, helping religious organizations improve security and safety for their congregations.
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="assets/survey_essentials.png" alt="Survey Essentials" class="rounded-2xl w-full h-[800px] object-contain">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 9: Klopotec -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="assets/klopotec.png" alt="Klopotec" class="rounded-2xl w-full h-[800px] object-contain">
+                    </div>
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">Klopotec</h3>
+                        <p class="text-slate-400 text-xl mb-4">Local service provider discovery and tourism guide</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Travel & Local</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">GPS</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Germany</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            Klopotec uses GPS technology to help users discover local providers of goods and services, as well as tourist attractions near them in the Prlekija and Slovenske gorice regions. The app provides comprehensive information about tourist accommodation, sight-worthy attractions, and local businesses to enhance travel experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 10: Jiassu VPN -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">Jiassu VPN</h3>
+                        <p class="text-slate-400 text-xl mb-4">Custom VPN solution for secure and private browsing</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">VPN</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">IKEv2 Protocol</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">China</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            Built a custom VPN solution for a Chinese company requiring anonymous and private browsing capabilities. Implemented using the IKEv2 protocol to ensure robust data privacy and personal information security. The app provides comprehensive internet security protection while allowing users to browse anonymously without being tracked.
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="assets/jiasu_vpn.png" alt="Jiassu VPN" class="rounded-2xl w-full h-[800px] object-contain">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 11: Essential Oil Recipes -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="assets/eo.png" alt="Essential Oil Recipes" class="rounded-2xl w-full h-[800px] object-contain">
+                    </div>
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">Essential Oil Recipes</h3>
+                        <p class="text-slate-400 text-xl mb-4">Recipe calculator for essential oils and carrier oils</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Food & Drink</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Utilities</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">USA</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            EO Recipes app instantly calculates costs for Carrier Oils, Bottles, and doTERRA Single or Blend Essential Oils. Users can create, save, edit, and share their custom recipes with easy folder organization. Perfect for aromatherapy enthusiasts and professionals to manage blending recipes and track expenses efficiently.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 12: Bitcoin Tracker -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center border-b border-[#33353d]">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">Bitcoin Tracker</h3>
+                        <p class="text-slate-400 text-xl mb-4">Cryptocurrency price tracking with trade signals</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Finance</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Crypto</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Pakistan</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            Bitcoin Tracker visualizes cryptocurrency prices across multiple exchanges, making it easy to find the best trading prices. The app provides real-time trade signals and technical data to support informed buying and selling decisions. Includes comprehensive analytics for monitoring market trends and optimizing trading strategies.
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="assets/bitcoin.png" alt="Bitcoin Tracker" class="rounded-2xl w-full h-[800px] object-contain">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 13: NowBet -->
+        <section class="py-32 bg-[#1a1c24] min-h-screen flex items-center">
+            <div class="max-w-screen-2xl mx-auto px-8 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="assets/nowbet.png" alt="NowBet" class="rounded-2xl w-full h-[800px] object-contain">
+                    </div>
+                    <div>
+                        <h3 class="text-5xl font-semibold text-white mb-2 heading-font">NowBet</h3>
+                        <p class="text-slate-400 text-xl mb-4">Business gaming app with live soccer feed</p>
+                        <ul class="flex flex-wrap gap-2 mb-6 list-none p-0">
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Gaming</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Live Sports</span></li>
+                            <li><span class="px-2 py-1 bg-[#f16522] bg-opacity-20 text-[#f16522] rounded text-base font-medium">Thailand</span></li>
+                        </ul>
+                        <p class="text-slate-300 text-xl leading-relaxed">
+                            NowBet is a business gaming app providing entertainment through real-time engagement with major soccer leagues. The platform delivers live sports feeds for immediate enjoyment and features the fastest and most efficient banking solution for seamless deposits and withdrawals, making gaming transactions smooth and secure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
+    <!-- FOOTER -->
+    
     <footer class="bg-[#1a1c24] py-8 border-t border-[#33353d]">
         <div class="max-w-screen-2xl mx-auto px-8 text-center text-slate-500 text-sm">
             © 2026 Sadda Hussain Butt • Senior Android Developer

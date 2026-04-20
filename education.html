@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Education - Sadda Hussain Butt | Senior Android Developer">
+    <title>Education | Sadda Hussain Butt</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav class="bg-[#1a1c24] border-b border-[#33353d] sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-[#f16522] text-white rounded-2xl flex items-center justify-center text-2xl font-bold">S</div>
+                <h1 class="heading-font text-2xl font-semibold tracking-tight text-white">Sadda Hussain Butt</h1>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="education.html" class="nav-link">Education</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="flex items-center gap-x-4">
+                <a href="https://www.linkedin.com/in/saddahussain" target="_blank" 
+                   class="flex items-center gap-x-2 text-slate-300 hover:text-[#f16522]">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                
+                <a href="Sadda_Hussain_Android_8_Years.pdf" download
+                   class="btn btn-primary text-sm">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+                
+                <button onclick="toggleMobileMenu()" class="md:hidden text-2xl text-slate-300">
+                    <i id="menu-icon" class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-8 pb-6 border-t border-[#33353d]">
+            <div class="flex flex-col gap-y-5 pt-6 text-sm font-medium">
+                <a href="index.html" onclick="toggleMobileMenu()" class="nav-link">Home</a>
+                <a href="about.html" onclick="toggleMobileMenu()" class="nav-link">About</a>
+                <a href="experience.html" onclick="toggleMobileMenu()" class="nav-link">Experience</a>
+                <a href="projects.html" onclick="toggleMobileMenu()" class="nav-link">Projects</a>
+                <a href="skills.html" onclick="toggleMobileMenu()" class="nav-link">Skills</a>
+                <a href="education.html" onclick="toggleMobileMenu()" class="nav-link">Education</a>
+                <a href="contact.html" onclick="toggleMobileMenu()" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- EDUCATION -->
+    <section id="education" class="py-20 bg-[#1a1c24]">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="section-header text-4xl font-semibold heading-font mb-10">Education</h2>
+            <div class="bg-[#23252c] p-10 rounded-3xl border border-[#33353d] max-w-2xl">
+                <h3 class="text-2xl font-semibold text-white">Bachelor of Science, Software Engineering</h3>
+                <p class="text-slate-400 mt-1">University of Gujrat • 2013 — 2017</p>
+                <p class="mt-4 text-emerald-400 font-medium">Grade: A+</p>
+                <div class="mt-6 text-slate-300">
+                    <strong>Major:</strong> Mobile App Development, Computer System Security<br>
+                    <strong>Activities:</strong> IEEE Student Ambassador, Pakistan
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1a1c24] py-8 border-t border-[#33353d]">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center text-slate-500 text-sm">
+            © 2026 Sadda Hussain Butt • Senior Android Developer
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

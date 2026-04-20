@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Sadda Hussain Butt - Senior Android Developer">
+    <title>About | Sadda Hussain Butt</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav class="bg-[#1a1c24] border-b border-[#33353d] sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-[#f16522] text-white rounded-2xl flex items-center justify-center text-2xl font-bold">S</div>
+                <h1 class="heading-font text-2xl font-semibold tracking-tight text-white">Sadda Hussain Butt</h1>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="education.html" class="nav-link">Education</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="flex items-center gap-x-4">
+                <a href="https://www.linkedin.com/in/saddahussain" target="_blank" 
+                   class="flex items-center gap-x-2 text-slate-300 hover:text-[#f16522]">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                
+                <a href="Sadda_Hussain_Android_8_Years.pdf" download
+                   class="btn btn-primary text-sm">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+                
+                <button onclick="toggleMobileMenu()" class="md:hidden text-2xl text-slate-300">
+                    <i id="menu-icon" class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-8 pb-6 border-t border-[#33353d]">
+            <div class="flex flex-col gap-y-5 pt-6 text-sm font-medium">
+                <a href="index.html" onclick="toggleMobileMenu()" class="nav-link">Home</a>
+                <a href="about.html" onclick="toggleMobileMenu()" class="nav-link">About</a>
+                <a href="experience.html" onclick="toggleMobileMenu()" class="nav-link">Experience</a>
+                <a href="projects.html" onclick="toggleMobileMenu()" class="nav-link">Projects</a>
+                <a href="skills.html" onclick="toggleMobileMenu()" class="nav-link">Skills</a>
+                <a href="education.html" onclick="toggleMobileMenu()" class="nav-link">Education</a>
+                <a href="contact.html" onclick="toggleMobileMenu()" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-[#1a1c24]">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="section-header text-4xl font-semibold heading-font mb-10">About Me</h2>
+            <div class="max-w-3xl text-slate-300 text-[17px] leading-relaxed">
+                <p>
+                    I'm an Android developer with <strong>8 years</strong> of hands-on experience building mobile applications 
+                    from concept to Play Store release. I specialize in creating secure, scalable, and user-friendly solutions 
+                    across B2B, B2C, and C2C domains — including booking platforms, healthcare, VPN, virtual fitness, 
+                    service marketplaces, and advanced hardware-integrated self-service kiosks.
+                </p>
+                <p class="mt-6">
+                    Currently working as a <strong>Top Rated Freelance Android Engineer on Upwork (100% Job Success)</strong>, 
+                    I recently delivered a robust kiosk system for electronics buyback with secure serial communication, 
+                    barcode scanning, and real-time REST API integration.
+                </p>
+                <p class="mt-6">
+                    Passionate about clean architecture, modern Kotlin, and integrating cutting-edge AI (OpenAI GPT-4o Mini & Groq LLaMA) 
+                    to deliver delightful user experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1a1c24] py-8 border-t border-[#33353d]">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center text-slate-500 text-sm">
+            © 2026 Sadda Hussain Butt • Senior Android Developer
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skills - Sadda Hussain Butt | Senior Android Developer">
+    <title>Skills | Sadda Hussain Butt</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav class="bg-[#1a1c24] border-b border-[#33353d] sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-[#f16522] text-white rounded-2xl flex items-center justify-center text-2xl font-bold">S</div>
+                <h1 class="heading-font text-2xl font-semibold tracking-tight text-white">Sadda Hussain Butt</h1>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="education.html" class="nav-link">Education</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="flex items-center gap-x-4">
+                <a href="https://www.linkedin.com/in/saddahussain" target="_blank" 
+                   class="flex items-center gap-x-2 text-slate-300 hover:text-[#f16522]">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                
+                <a href="Sadda_Hussain_Android_8_Years.pdf" download
+                   class="btn btn-primary text-sm">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+                
+                <button onclick="toggleMobileMenu()" class="md:hidden text-2xl text-slate-300">
+                    <i id="menu-icon" class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-8 pb-6 border-t border-[#33353d]">
+            <div class="flex flex-col gap-y-5 pt-6 text-sm font-medium">
+                <a href="index.html" onclick="toggleMobileMenu()" class="nav-link">Home</a>
+                <a href="about.html" onclick="toggleMobileMenu()" class="nav-link">About</a>
+                <a href="experience.html" onclick="toggleMobileMenu()" class="nav-link">Experience</a>
+                <a href="projects.html" onclick="toggleMobileMenu()" class="nav-link">Projects</a>
+                <a href="skills.html" onclick="toggleMobileMenu()" class="nav-link">Skills</a>
+                <a href="education.html" onclick="toggleMobileMenu()" class="nav-link">Education</a>
+                <a href="contact.html" onclick="toggleMobileMenu()" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-20 bg-[#23252c]">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="section-header text-4xl font-semibold heading-font mb-12">Skills & Tools</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-400 mb-5">Languages & IDE</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Kotlin</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Java</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Android Studio</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Gradle (Kotlin DSL)</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-400 mb-5">Architecture</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">MVVM</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Clean Architecture</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">SOLID Principles</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Modularization</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-400 mb-5">Frameworks & Libraries</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Jetpack Compose</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Hilt / Dagger</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Retrofit</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Coroutines & Flow</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Firebase</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-400 mb-5">UI/UX & Design</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Material Design 3</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Figma</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Custom Views</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-400 mb-5">Integrations</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Stripe • PayPal</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Google Maps • Mapbox</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">AES Encryption • Biometrics</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-400 mb-5">Project Management</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Git • GitHub</span>
+                        <span class="skill-tag px-5 py-2.5 rounded-3xl text-sm">Jira • Scrum</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1a1c24] py-8 border-t border-[#33353d]">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center text-slate-500 text-sm">
+            © 2026 Sadda Hussain Butt • Senior Android Developer
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

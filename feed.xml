@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sadda Hussain Butt</title>
+    <link>https://saddahussain.com/</link>
+    <description>Portfolio updates from Sadda Hussain Butt, Senior Android Developer.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://saddahussain.com/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Home</title>
+      <link>https://saddahussain.com/</link>
+      <guid>https://saddahussain.com/</guid>
+      <description>Main portfolio landing page.</description>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>About</title>
+      <link>https://saddahussain.com/about.html</link>
+      <guid>https://saddahussain.com/about.html</guid>
+      <description>Professional background and profile summary.</description>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Experience</title>
+      <link>https://saddahussain.com/experience.html</link>
+      <guid>https://saddahussain.com/experience.html</guid>
+      <description>Work history, roles, and impact.</description>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Projects</title>
+      <link>https://saddahussain.com/projects.html</link>
+      <guid>https://saddahussain.com/projects.html</guid>
+      <description>Selected Android and product projects.</description>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Skills</title>
+      <link>https://saddahussain.com/skills.html</link>
+      <guid>https://saddahussain.com/skills.html</guid>
+      <description>Technical skills and tooling expertise.</description>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Education</title>
+      <link>https://saddahussain.com/education.html</link>
+      <guid>https://saddahussain.com/education.html</guid>
+      <description>Academic background and certifications.</description>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Contact</title>
+      <link>https://saddahussain.com/contact.html</link>
+      <guid>https://saddahussain.com/contact.html</guid>
+      <description>Ways to get in touch and collaborate.</description>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

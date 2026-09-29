@@ -1,0 +1,125 @@
+<section
+  class="page-hero projects-hero dark-section"
+  aria-labelledby="projects-title"
+>
+  <div class="container page-hero-grid">
+    <div>
+      <p class="eyebrow eyebrow-lime">
+        SELECTED WORK / BUILT FOR THE REAL WORLD
+      </p>
+      <h1 id="projects-title">Proof is in<br /><em>the products.</em></h1>
+      <p class="page-hero-intro">
+        Twenty projects across connected hardware, AI wellness, marketplaces,
+        and everyday tools. Different challenges. One standard: make it work
+        beautifully.
+      </p>
+    </div>
+    <div class="page-hero-aside page-hero-aside-metric">
+      <strong>20<span>.</span></strong>
+      <p>projects across an evolving Android landscape</p>
+    </div>
+  </div>
+</section>
+
+<section class="section project-gallery" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="section-heading project-gallery-heading">
+      <div>
+        <p class="eyebrow eyebrow-dark">
+          <span class="eyebrow-index">01 /</span> THE PORTFOLIO
+        </p>
+        <h2 id="gallery-title">
+          A range of problems.<br /><span class="text-muted"
+            >A body of work.</span
+          >
+        </h2>
+      </div>
+      <p>
+        Browse the work by category, or take your time with the full collection.
+      </p>
+    </div>
+    <div class="project-toolbar">
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button
+          class="filter-button is-active"
+          type="button"
+          data-filter="all"
+          aria-pressed="true"
+        >
+          All <span>20</span></button
+        ><button
+          class="filter-button"
+          type="button"
+          data-filter="systems"
+          aria-pressed="false"
+        >
+          Systems &amp; devices</button
+        ><button
+          class="filter-button"
+          type="button"
+          data-filter="consumer"
+          aria-pressed="false"
+        >
+          Consumer apps</button
+        ><button
+          class="filter-button"
+          type="button"
+          data-filter="commerce"
+          aria-pressed="false"
+        >
+          Marketplaces</button
+        ><button
+          class="filter-button"
+          type="button"
+          data-filter="tools"
+          aria-pressed="false"
+        >
+          Tools
+        </button>
+      </div>
+      <p
+        class="project-count"
+        id="project-count"
+        role="status"
+        aria-live="polite"
+      >
+        SHOWING 20 PROJECTS
+      </p>
+    </div>
+    <div class="project-group" data-filter-section>
+      <div class="project-group-heading">
+        <span>FEATURED PROJECTS</span><span>01 — 03</span>
+      </div>
+      <div class="featured-projects">{{FEATURED_PROJECTS}}</div>
+    </div>
+    <div class="project-group project-archive-group" data-filter-section>
+      <div class="project-group-heading">
+        <span>MORE WORK</span><span>04 — 20</span>
+      </div>
+      <div class="archive-grid">{{ARCHIVE_PROJECTS}}</div>
+    </div>
+  </div>
+</section>
+
+<section
+  class="portfolio-note dark-section"
+  aria-labelledby="portfolio-note-title"
+>
+  <div class="container portfolio-note-inner">
+    <span class="portfolio-note-symbol" aria-hidden="true">✳</span>
+    <div>
+      <p class="eyebrow eyebrow-lime">THE BIGGER PICTURE</p>
+      <h2 id="portfolio-note-title">
+        Different industries.<br />One engineering mindset.
+      </h2>
+      <p>
+        The most interesting projects rarely come with a familiar playbook.
+        That's where thoughtful architecture, curiosity, and collaboration
+        matter most.
+      </p>
+    </div>
+    <a class="button button-outline-light" href="about.html"
+      >Meet the engineer <span aria-hidden="true">↗</span></a
+    >
+  </div>
+</section>
